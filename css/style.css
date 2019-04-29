@@ -70,10 +70,22 @@ header{
 }
 .main-nav {
     position: relative;
-    padding: 20px 0;
+    padding: 5px 0;
     transition: ease-in .4s;
-    height: 10rem;
+    height: 7rem;
     margin-bottom: -70px;
+}
+.main-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/7.png');
+    background-size: 100% 100%;
+    z-index: 9;
+    background-position: center;
 }
 header::after {
     content: '';
@@ -107,7 +119,7 @@ header form a span {
 }
 header .nav-link {
     text-transform: uppercase;
-    margin-left: 17px;
+    margin-left: 10px;
     font-size: 14px;
     color: #fff !important;
 }
@@ -127,35 +139,65 @@ header form a {
 
 .banner .item{
     position: relative;
+    height: 40rem;
 }
-.banner .item::before {
+.banner .item1{
+    background: url('../images/1.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner .item1::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
-    opacity: .4;
-    z-index: 1;
-}
-.banner .item1{
-    background: url('../images/1.jpg');
-    background-size: 100% 100%;
-    height: 740px;
+    background: url('../images/4.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    z-index: -2;
 }
 .banner .item2{
     background: url('../images/2.jpg');
     background-size: cover;
-    height: 740px;
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.banner .item2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/5.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    z-index: -2;
 }
 .banner .item3{
     background: url('../images/3.jpg');
     background-size: cover;
-    height: 740px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.banner .item3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-image: linear-gradient(#FBFBFB, #F8F8F8);
+    background-repeat: repeat;
+    z-index: -2;
 }
 .item2 .text h1 {
-    padding-top: 21rem !important;
+    padding-top: 15rem !important;
 }
 .item3 .text h1 {
     max-width: 22rem;
@@ -198,7 +240,7 @@ header form a {
     color: #DADADA !important;
 }
 .banner .text h1 {
-    padding-top: 30rem;
+    padding-top: 20rem;
     text-align: right;
     color: #fff;
     text-shadow: 0px 0px 2px #000;
@@ -257,10 +299,13 @@ header form a {
 service .content .box {
     margin: 35px 0;
 }
-.service .content .box h5 {
-    font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 0;
+.service .box a {
+    color: #000 !important;
+    text-decoration: none !important;
+    font-size: 19px;
+}
+.service .box img {
+    margin: 10px auto;
 }
 
 /* end service */
@@ -322,6 +367,10 @@ service .content .box {
     border-radius: 25px;
     text-transform: capitalize;
     font-family: ProximaRegular;
+}
+.call-to-action button a{
+    text-decoration: none;
+    color: #fff;
 }
 .call-to-action button span{
     font-size: 22px;
@@ -579,8 +628,45 @@ footer ul li span{
     position: fixed;
     transition: ease-in .4s;
     height: 6rem;
-    padding: 35px 0;
+    padding: 0px 0;
     background: transparent;
+}
+.drp {
+    position: relative !important;
+    height: auto !important;
+    top: 0 !important;
+    transform: inherit !important;
+    display: none;
+}
+.drp a {
+    margin: 5px 0 !important;
+    font-size: 17px !important;
+    font-family: ProximaRegular;
+}
+.book a {
+    margin-top: 0 !important;
+    margin-bottom: 50px !important;
+    text-transform: capitalize;
+}
+.book span {
+    margin-right: 10px;
+}
+.social21 {
+    width: auto !important;
+    top: 90% !important;
+    transform: inherit !important;
+    bottom: 0 !important;
+    position: absolute !important;
+    height: 50px !important;
+    overflow: inherit !important;
+}
+.social21 li {
+    float: left;
+    margin: 0 8px;
+}
+.social21 li a {
+    margin: 0 !important;
+    font-size: 17px !important;
 }
 
 /* end mobile nav */
